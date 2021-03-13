@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Ionic - Componentes Visuais</title>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+</head>
+
+<body>
+    <ion-app>
+        <ion-header>
+            <ion-toolbar>
+                <ion-title>Text</ion-title>
+            </ion-toolbar>
+        </ion-header>
+        <ion-content>
+            <ion-text color="secondary">
+                <h1>Alterado a cor de um título H1</h1>
+            </ion-text>
+            <ion-text color="primary">
+                <h2>Alterado a cor de um título H2</h2>
+            </ion-text>
+            <p>
+                Alterando a cor de <ion-text color="danger">
+                    <span>parte de um parágrafo</span>
+                </ion-text>
+                mantendo a cor padrão para o resto.
+            </p>
+        </ion-content>
+    </ion-app>
+</body>
+
+</html>

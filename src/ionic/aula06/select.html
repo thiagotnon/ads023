@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Ionic - Componentes Visuais</title>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+</head>
+
+<body>
+    <ion-app>
+        <ion-header>
+            <ion-toolbar>
+                <ion-title>Select</ion-title>
+            </ion-toolbar>
+        </ion-header>
+        <ion-content>
+            <ion-item>
+                <ion-label>Sexo</ion-label>
+                <ion-select placeholder="Selecione">
+                    <ion-select-option value="f">Feminino</ion-select-option>
+                    <ion-select-option value="m">Masculino</ion-select-option>
+                </ion-select>
+            </ion-item>
+            <ion-item>
+                <ion-label>Opções</ion-label>
+                <ion-select value="1" ok-text="Ok" cancel-text="Desistir">
+                    <ion-select-option value="1">Opção 1</ion-select-option>
+                    <ion-select-option value="2">Opção 2</ion-select-option>
+                    <ion-select-option value="3">Opção 3</ion-select-option>
+                    <ion-select-option value="4">Opção 4</ion-select-option>
+                </ion-select>
+            </ion-item>
+        </ion-content>
+    </ion-app>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Ionic - Leiautes</title>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+</head>
+
+<body>
+    <ion-app>
+        <ion-menu side="start" content-id="mainId">
+            <ion-header>
+                <ion-toolbar>
+                    <ion-title>Menu</ion-title>
+                </ion-toolbar>
+            </ion-header>
+            <ion-content>
+                <ion-list>
+                    <ion-item>Menu Item 1</ion-item>
+                    <ion-item>Menu Item 2</ion-item>
+                    <ion-item>Menu Item 3</ion-item>
+                </ion-list>
+            </ion-content>
+        </ion-menu>
+        <div class="ion-page" id="mainId">
+            <h1>Conteúdo Principal</h1>
+        </div>
+        <ion-menu-controller></ion-menu-controller>
+    </ion-app>
+</body>
+
+</html>
