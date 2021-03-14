@@ -1,21 +1,15 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+
+import FlatListScreen from './components/FlatListScreen';
+import SectionListScreen from './components/SectionListScreen';
 
 export default function App() {
+  const opcao = 1;
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <>
+      {(opcao == 1) && (<FlatListScreen />)}
+      {(opcao == 2) && (<SectionListScreen />)}
+    </>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
