@@ -1,0 +1,13 @@
+version: "3.3"
+services:
+  expo:
+    build: .
+    image: expo:latest
+    command: -c "npm install --silent && npm run web"
+    tty: true
+    ports:
+      - "19001:19001"
+      - "19002:19002"
+      - "19006:19006"
+    volumes:
+      - .:/home/node/app
