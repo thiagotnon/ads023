@@ -9,7 +9,7 @@ import {
 import { Ionicons } from '@expo/vector-icons';
 import styles from '../styles/styles';
 
-export default function Login() {
+export default function Login({ navigation }) {
   const [inputUser, setInputUser] = React.useState('');
   const [inputPass, setInputPass] = React.useState('');
   const [hidePass, setHidePass] = React.useState(true);
@@ -48,13 +48,16 @@ export default function Login() {
           >
             <Ionicons
               name={hidePass ? 'eye' : 'eye-off'}
-              color={inputPass ? '#00a5f4' : '#4E4E4E'}
+              color={inputPass ? '#636E72' : '#4E4E4E'}
               size={25}
             />
           </TouchableOpacity>
         </View>
 
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity
+          style={styles.button}
+          onPress={() => navigation.navigate('List')}
+        >
           <Text style={styles.textButton}>Entrar</Text>
         </TouchableOpacity>
       </View>

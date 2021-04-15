@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
     width: '90%',
     height: 60,
     borderRadius: 6,
-    backgroundColor: '#00a5f4',
+    backgroundColor: '#636E72',
     alignItems: 'center',
     justifyContent: 'center',
     marginTop: 30,
@@ -46,10 +46,10 @@ const styles = StyleSheet.create({
     marginBottom: 30,
     borderBottomColor: 'red',
     borderBottomWidth: 1,
-    borderBottomColor: '#4E4E4E',
+    borderBottomColor: '#636E72',
   },
   label: {
-    color: '#4E4E4E',
+    color: '#636E72',
     width: '90%',
     letterSpacing: 4,
   },
@@ -64,6 +64,34 @@ const styles = StyleSheet.create({
     height: 50,
     justifyContent: 'center',
     alignItems: 'center',
+  },
+  list: {
+    width: '100%',
+    height: '100%',
+  },
+  list_item: {
+    padding: 15,
+
+    borderBottomWidth: 1,
+    borderBottomColor: '#4E4E4E',
+  },
+  list_item_position: {
+    fontSize: 12,
+    color: '#B2BEC3',
+  },
+  list_item_name: {
+    fontSize: 20,
+    color: '#FFFFFF',
+  },
+  plus: {
+    color: '#fff',
+    fontSize: 25,
+    padding: 10,
+  },
+  header: {
+    width: '100%',
+    height: '100%',
+    backgroundColor: 'red',
   },
 });
 
